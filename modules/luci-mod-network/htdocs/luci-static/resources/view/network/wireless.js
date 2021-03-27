@@ -932,6 +932,7 @@ return view.extend({
 				ss.tab('encryption', _('Wireless Security'));
 				ss.tab('macfilter', _('MAC-Filter'));
 				ss.tab('advanced', _('Advanced Settings'));
+				ss.tab('bandsteering', _('Band Steering'));
 
 				o = ss.taboption('general', form.ListValue, 'mode', _('Mode'));
 				o.value('ap', _('Access Point'));
@@ -1130,6 +1131,28 @@ return view.extend({
 
 					o = ss.taboption('advanced', form.Flag, 'disassoc_low_ack', _('Disassociate On Low Acknowledgement'), _('Allow AP mode to disconnect STAs based on low ACK condition'));
 					o.default = o.enabled;
+
+					o = ss.taboption('bandsteering', form.Flag, 'ieee80211k', _('Enable RRM'), _('Enable IEEE 802.11k Radio Resource Management'));
+					o.depends('mode', 'ap');
+					o.depends('mode', 'ap-wds');
+
+					o = ss.taboption('bandsteering', form.Flag, 'bss_transition', _('Enable BSS Transition'), _('Enable IEEE 802.11v BSS Transition'));
+					o.depends('mode', 'ap');
+					o.depends('mode', 'ap-wds');
+
+					o = ss.taboption('bandsteering', form.Flag, 'wnm_sleep_mode', _('Enable WNM-Sleep mode'), _('Enable extended sleep mode for stations'));
+					o.depends('mode', 'ap');
+					o.depends('mode', 'ap-wds');
+
+					o = ss.taboption('bandsteering', form.Flag, 'wnm_sleep_mode_no_keys', _('Enable WNM-Sleep mode GTK/IGTK workaround'), _('Enable workaround for GTK/IGTK reinstallation vulnerability. Useful with KRACK countermeasures enabled.'));
+					o.depends('mode', 'ap');
+					o.depends('mode', 'ap-wds');
+
+					o = ss.taboption('bandsteering', form.ListValue, 'time_advertisement', _('Enable Time advertisement'), _('Advertise UTC time at which TSF timer is equal to 0.\nNOTE: To set <code>time_zone</code> option, please log in via SSH.'));
+					o.value(0, _('Disabled'));
+					o.value(2, _('Enabled'));
+					o.depends('mode', 'ap');
+					o.depends('mode', 'ap-wds');
 				}
 
 
