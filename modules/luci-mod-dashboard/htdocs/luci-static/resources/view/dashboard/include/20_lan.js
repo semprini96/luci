@@ -72,6 +72,7 @@ return baseclass.extend({
 
 		container_box.appendChild(E('hr'));
 		container_box.appendChild(container_devices);
+		container_box.appendChild(E('hr'));
 		container_box.appendChild(container_deviceslist);
 		container_wapper.appendChild(container_box);
 
