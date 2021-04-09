@@ -103,7 +103,7 @@ return baseclass.extend({
 				var container_content;
 
 				if ('progress' == idx) {
-					container_content = E('div', { 'class' : 'td device-info' }, [
+					container_content = E('td', { 'class' : 'td device-info' }, [
 						E('div', { 'class': 'progress' }, [
 							E('div', { 'class': 'progress-bar ' + device[idx].value.style, role: 'progressbar', style: 'width:'+device[idx].value.qualite+'%', 'aria-valuenow': device[idx].value.qualite, 'aria-valuemin': 0, 'aria-valuemax': 100 }),
 						])
@@ -212,7 +212,7 @@ return baseclass.extend({
 				else if (q < 50)
 					progress_style = 'bg-warning';
 				else if (q < 75)
-					progress_style = 'bg-success';
+					progress_style = 'bg-alert';
 				else
 					progress_style = 'bg-success';
 

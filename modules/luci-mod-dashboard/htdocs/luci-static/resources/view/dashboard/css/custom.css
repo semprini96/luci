@@ -170,8 +170,6 @@
 .Dashboard .router-status-wifi .wifi-info .devices-info .tr .td:nth-child(3) {
     width: 22%;
     overflow: hidden;
-    position: relative;
-    top: -3px;
 }
 
 .Dashboard .router-status-wifi .wifi-info .devices-info .tr .td:nth-child(5) {
@@ -186,10 +184,33 @@
     padding: 0;
     width: 100%;
     margin: 0;
+    background-color: #d2d2d2;
+    border-radius: 5px;
 }
 
 .Dashboard .wifi-info .devices-info .table-titles {
     border-bottom:1px solid rgba(0,0,0,.1);
+}
+
+.progress-bar {
+    height: 10px;
+    border-radius: 5px;
+}
+
+.bg-success {
+    background-color: #5cb85c;
+}
+
+.bg-alert {
+    background-color: #dadc00;
+}
+
+.bg-warning {
+    background-color: #cc8800;
+}
+
+.bg-danger {
+    background-color: #cc1111;
 }
 
 /**
