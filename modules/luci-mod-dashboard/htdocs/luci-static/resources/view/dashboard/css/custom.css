@@ -71,12 +71,18 @@
 }
 
 .Dashboard .devices-list .devices-info .tr .td{
+    width: 25%;
     padding:0px 0 0 10px;
+    text-align: center;
 }
 
 .Dashboard .devices-list .devices-info .tr .td:first-child {
-    width: 33%;
+    width: 38%;
     word-break: break-all;
+}
+
+.Dashboard .devices-list .devices-info .tr .td:nth-child(2) {
+    width: 33%;
 }
 
 .Dashboard .devices-list hr:nth-child(4) {
@@ -85,6 +91,10 @@
 }
 
 .Dashboard .router-status-lan .devices-list .table-titles .th:first-child {
+    width: 40%;
+}
+
+.Dashboard .router-status-lan .devices-list .table-titles .th:nth-child(2) {
     width: 35%;
 }
 
@@ -118,26 +128,22 @@
 }
 
 .Dashboard .settings-info p span:nth-child(2){
-    display: inline-block;
     word-break: break-all;
-    max-width: 150px;
     overflow: hidden;
     max-height: 16px;
     position: relative;
-    top:2px;
 }
 
 .Dashboard .router-status-info .settings-info p span:nth-child(2){
-    max-width: 283px;
+    max-width: 500px;
 }
 
 .Dashboard .settings-info p span.ssid {
     max-height: 18px;
-    top: 3px;
 }
 
 .Dashboard .settings-info p span.encryption {
-    max-width: 82px;
+    max-width: 150px;
 }
 
 .Dashboard .router-status-wifi .wifi-info .settings-info,
@@ -147,12 +153,20 @@
     justify-content: space-around;
 }
 
+.Dashboard .router-status-wifi .wifi-info .devices-info .tr .th:first-child {
+    width: 33%;
+}
+
+.Dashboard .router-status-wifi .wifi-info .devices-info .tr .th:last-child {
+    width: 24%;
+}
+
 .Dashboard .router-status-wifi .wifi-info .devices-info .tr .td {
     padding: 0 10px 0 10px;
 }
 
 .Dashboard .router-status-wifi .wifi-info .devices-info .tr .td:first-child {
-    width: 30%;
+    width: 35%;
     word-break: break-all;
 }
 
@@ -168,7 +182,7 @@
 }
 
 .Dashboard .router-status-wifi .wifi-info .devices-info .tr .td:nth-child(3) {
-    width: 22%;
+    width: 21%;
     overflow: hidden;
 }
 
@@ -199,10 +213,6 @@
 
 .bg-success {
     background-color: #5cb85c;
-}
-
-.bg-alert {
-    background-color: #dadc00;
 }
 
 .bg-warning {

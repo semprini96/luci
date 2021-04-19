@@ -212,7 +212,7 @@ return baseclass.extend({
 				else if (q < 50)
 					progress_style = 'bg-warning';
 				else if (q < 75)
-					progress_style = 'bg-alert';
+					progress_style = 'bg-success';
 				else
 					progress_style = 'bg-success';
 
