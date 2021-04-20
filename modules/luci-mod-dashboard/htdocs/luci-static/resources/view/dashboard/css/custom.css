@@ -75,8 +75,12 @@
 }
 
 .Dashboard .devices-list .devices-info .tr .td:first-child {
-    width: 33%;
+    width: 37%;
     word-break: break-all;
+}
+
+.Dashboard .devices-list .devices-info .tr .td:last-child {
+    width: 36%;
 }
 
 .Dashboard .devices-list hr:nth-child(4) {
@@ -85,7 +89,11 @@
 }
 
 .Dashboard .router-status-lan .devices-list .table-titles .th:first-child {
-    width: 35%;
+    width: 38%;
+}
+
+.Dashboard .router-status-lan .devices-list .table-titles .th:nth-child(2) {
+    width: 27%;
 }
 
 .Dashboard .router-status-self .router-status-info .settings-info {
@@ -118,8 +126,9 @@
 }
 
 .Dashboard .settings-info p span:nth-child(2){
-    display: inline-block;
     word-break: break-all;
+    overflow: hidden;
+    position: relative;
 }
 
 .Dashboard .settings-info p span:nth-child(2).label {
@@ -128,16 +137,15 @@
 }
 
 .Dashboard .router-status-info .settings-info p span:nth-child(2){
-    max-width: 283px;
+    max-width: 500px;
 }
 
 .Dashboard .settings-info p span.ssid {
     max-height: 18px;
-    top: 3px;
 }
 
 .Dashboard .settings-info p span.encryption {
-    max-width: 82px;
+    max-width: 150px;
 }
 
 .Dashboard .router-status-wifi .wifi-info .settings-info,
@@ -145,6 +153,14 @@
 {
     display: flex;
     justify-content: space-around;
+}
+
+.Dashboard .router-status-wifi .wifi-info .devices-info .tr .th:first-child {
+    width: 28%;
+}
+
+.Dashboard .router-status-wifi .wifi-info .devices-info .tr .th:nth-child(3) {
+    width: 19%;
 }
 
 .Dashboard .router-status-wifi .wifi-info .devices-info .tr .td {
@@ -168,10 +184,8 @@
 }
 
 .Dashboard .router-status-wifi .wifi-info .devices-info .tr .td:nth-child(3) {
-    width: 22%;
+    width: 19%;
     overflow: hidden;
-    position: relative;
-    top: -3px;
 }
 
 .Dashboard .router-status-wifi .wifi-info .devices-info .tr .td:nth-child(5) {
@@ -186,10 +200,29 @@
     padding: 0;
     width: 100%;
     margin: 0;
+    background-color: #d2d2d2;
+    border-radius: 5px;
 }
 
 .Dashboard .wifi-info .devices-info .table-titles {
     border-bottom:1px solid rgba(0,0,0,.1);
+}
+
+.progress-bar {
+    height: 10px;
+    border-radius: 5px;
+}
+
+.bg-success {
+    background-color: #5cb85c;
+}
+
+.bg-warning {
+    background-color: #cc8800;
+}
+
+.bg-danger {
+    background-color: #cc1111;
 }
 
 /**
