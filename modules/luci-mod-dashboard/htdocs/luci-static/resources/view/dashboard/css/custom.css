@@ -212,7 +212,7 @@
     border-radius: 5px;
 }
 
-.bg-success {
+.bg-success, .label-success {
     background-color: #5cb85c;
 }
 
@@ -220,7 +220,7 @@
     background-color: #cc8800;
 }
 
-.bg-danger {
+.bg-danger, .label-danger {
     background-color: #cc1111;
 }
 
@@ -250,7 +250,7 @@
     }
 
     .Dashboard .router-status-self .router-status-info .settings-info {
-        padding:0;
+        padding: 1em 0 0 0;
     }
 
     .Dashboard .section-content .internet-status-info .settings-info {
