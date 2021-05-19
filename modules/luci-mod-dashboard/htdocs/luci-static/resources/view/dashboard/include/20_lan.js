@@ -81,7 +81,10 @@ return baseclass.extend({
 	renderUpdateData: function(data, leases) {
 
 		for(var item in data) {
-			if (/lan|br-lan/ig.test(data[item].ifname) && (typeof data[item].dev == 'object' && !data[item].dev.wireless)) {
+			if (/switch|dsa|lan|br-lan/ig.test(data[item].ifname) 
+			&& (typeof data[item].dev == 'object' 
+			&& data[item].dev.devtype
+			&& !data[item].dev.wireless)) {
 				var lan_device = data[item];
 				var ipv4addr = lan_device.dev.ipaddrs.toString().split('/');
 
