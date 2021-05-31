@@ -104,7 +104,10 @@ return baseclass.extend({
 
 				if ('progress' == idx) {
 					container_content = E('td', { 'class' : 'td device-info' }, [
-						E('div', { 'class': 'progress' }, [
+						E('div', { 
+							'class': 'progress',
+							'title': '%s: %d%%'.format(_('Signal quality'), device[idx].value.qualite)
+						}, [
 							E('div', { 'class': 'progress-bar ' + device[idx].value.style, role: 'progressbar', style: 'width:'+device[idx].value.qualite+'%', 'aria-valuenow': device[idx].value.qualite, 'aria-valuemin': 0, 'aria-valuemax': 100 }),
 						])
 					]);
