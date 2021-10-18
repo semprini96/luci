@@ -132,8 +132,7 @@
 }
 
 .Dashboard .settings-info p span:nth-child(2).label {
-    padding: 1px 4px 1px 4px;
-    font-size: 9.75px;
+    font-size: 13px;
 }
 
 .Dashboard .router-status-info .settings-info p span:nth-child(2){
