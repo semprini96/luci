@@ -71,7 +71,7 @@
 }
 
 .Dashboard .devices-list .devices-info .tr .td{
-    padding:0px 0 0 10px;
+    padding:0px 0 0 8px;
 }
 
 .Dashboard .devices-list .devices-info .tr .td:first-child {
@@ -80,7 +80,7 @@
 }
 
 .Dashboard .devices-list .devices-info .tr .td:last-child {
-    width: 36%;
+    width: 35%;
 }
 
 .Dashboard .devices-list hr:nth-child(4) {
@@ -167,12 +167,12 @@
 }
 
 .Dashboard .router-status-wifi .wifi-info .devices-info .tr .td:first-child {
-    width: 30%;
+    width: 29%;
     word-break: break-all;
 }
 
 .Dashboard .router-status-wifi .wifi-info .devices-info .tr .td:nth-child(2) {
-    width: 21%;
+    width: 22%;
     overflow: hidden;
     padding-left:0;
     word-break: break-all;
